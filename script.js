@@ -1,6 +1,4 @@
-function calculate() {
-  let V = document.getElementById("voltage").value;
-  let R = document.getElementById("resistance").value;
+
 // ── OPEN / CLOSE MODAL ──
 function openLab(type) {
   document.getElementById('overlay').classList.add('active');
