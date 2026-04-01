@@ -7,3 +7,8 @@ function calculate() {
   document.getElementById("result").innerText =
     "Current = " + I + " Amps";
 }
+
+if (V == "" || R == "") {
+  alert("Enter all values");
+  return;
+}
