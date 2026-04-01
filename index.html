@@ -21,6 +21,137 @@
         3. Click calculate<br>
         4. Observe current
     </p>
+   <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>VirtuLab</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=DM+Mono:wght@400&family=Lora:ital@0;1&display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <div class="logo"><div class="logo-dot"></div>VirtuLab</div>
+  <div class="nav-links">
+    <a href="#labs">Labs</a>
+    <a href="#how">How it works</a>
+    <a href="#impact">Impact</a>
+    <button class="nav-cta" onclick="document.getElementById('labs').scrollIntoView({behavior:'smooth'})">Start Learning →</button>
+  </div>
+</nav>
+
+<section class="hero">
+  <div class="hero-glow"></div>
+  <div class="hero-grid"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span class="eyebrow-dot"></span>NEP 2020 — Experiential Learning Initiative</div>
+    <h1 class="hero-title">Every student<br>deserves a <span>lab.</span></h1>
+    <p class="hero-sub">A student in Bihar has a textbook.<br>Our student has a fully equipped virtual laboratory.</p>
+    <div class="stat-row">
+      <div class="stat-item"><div class="stat-num">1.5Cr+</div><div class="stat-label">Engineering students</div></div>
+      <div class="stat-item"><div class="stat-num">~60%</div><div class="stat-label">Lack real lab access</div></div>
+      <div class="stat-item"><div class="stat-num">6–12mo</div><div class="stat-label">On-job retraining</div></div>
+    </div>
+    <div class="cta-row">
+      <button class="btn-p" onclick="document.getElementById('labs').scrollIntoView({behavior:'smooth'})">Enter the Lab</button>
+      <button class="btn-s" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">How it works</button>
+    </div>
+  </div>
+</section>
+
+<section class="problem-section">
+  <div class="two-col container">
+    <div>
+      <span class="slabel">// THE PROBLEM</span>
+      <h2 class="stitle">A tale of two classrooms.</h2>
+      <p class="sbody">India's NEP recognises experiential learning as essential — yet the reality is deeply unequal. IIT students have world-class labs. Crores of students copy experiment write-ups for experiments they will never perform.</p>
+      <p class="sbody" style="margin-top:14px">A chemistry student who has never mixed reagents cannot build intuition. Memorising facts without doing is not education.</p>
+    </div>
+    <div class="compare-cards">
+      <div class="cc gc"><div class="cc-label g">// IIT DELHI — TIER 1</div><div class="cc-body">World-class labs, simulation software, research mentorship. Graduates with genuine practical intuition.</div></div>
+      <div class="cc bc"><div class="cc-label b">// GOVT. COLLEGE, RURAL BIHAR</div><div class="cc-body">A textbook, a blackboard, a lab last functional 5 years ago. Pass exams but cannot solve real problems.</div></div>
+      <div class="cc bridge-card"><div class="cc-label g">// VIRTULAB — THE BRIDGE</div><div class="cc-body">Immersive virtual labs. Zero cost. Works on any phone. Builds genuine intuition through doing, not reading.</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="labs" class="section container">
+  <div class="labs-header">
+    <span class="slabel">// VIRTUAL LABORATORIES</span>
+    <h2 class="stitle">Choose your lab.</h2>
+    <p class="labs-sub">Interact with real simulations. Build intuition by doing, not reading.</p>
+  </div>
+  <div class="labs-grid">
+    <div class="lab-card chem" onclick="openLab('chem')">
+      <div class="lab-icon chem">⚗️</div>
+      <div class="lab-title">Chemistry</div>
+      <div class="lab-desc">Mix reagents, observe reactions, measure pH — the same intuition you build in a real lab.</div>
+      <div class="lab-tags"><span class="tag">Acid-Base Titration</span><span class="tag">pH Indicators</span></div>
+      <button class="lab-btn chem">Open Chemistry Lab →</button>
+    </div>
+    <div class="lab-card elec" onclick="openLab('elec')">
+      <div class="lab-icon elec">⚡</div>
+      <div class="lab-title">Electronics</div>
+      <div class="lab-desc">Assemble virtual circuits, adjust voltage, watch LEDs glow — understand Ohm's Law by experiencing it.</div>
+      <div class="lab-tags"><span class="tag">LED Circuit</span><span class="tag">Ohm's Law</span></div>
+      <button class="lab-btn elec">Open Electronics Lab →</button>
+    </div>
+    <div class="lab-card phys" onclick="openLab('phys')">
+      <div class="lab-icon phys">🔭</div>
+      <div class="lab-title">Physics</div>
+      <div class="lab-desc">Swing a virtual pendulum, change gravity — discover the laws of motion hands-on.</div>
+      <div class="lab-tags"><span class="tag">Simple Pendulum</span><span class="tag">Gravity</span></div>
+      <button class="lab-btn phys">Open Physics Lab →</button>
+    </div>
+  </div>
+</section>
+
+<section id="how" class="section container">
+  <span class="slabel">// HOW IT WORKS</span>
+  <h2 class="stitle">Built for the student with just a phone.</h2>
+  <div class="steps">
+    <div class="step"><div class="stepnum">01</div><div class="step-body"><div class="step-title">Choose your experiment</div><p>Pick from Chemistry, Electronics, or Physics aligned with CBSE and state engineering curricula.</p></div></div>
+    <div class="step"><div class="stepnum">02</div><div class="step-body"><div class="step-title">Interact with the simulation</div><p>Drag sliders, adjust values, watch the experiment respond in real time using actual scientific formulae.</p></div></div>
+    <div class="step"><div class="stepnum">03</div><div class="step-body"><div class="step-title">Read the intelligent explanation</div><p>VirtuLab explains what happened and why — building conceptual understanding, not just memory.</p></div></div>
+    <div class="step"><div class="stepnum">04</div><div class="step-body"><div class="step-title">Test your intuition</div><p>A short quiz tests whether you can predict what happens next — the mark of genuine practical knowledge.</p></div></div>
+  </div>
+</section>
+
+<section id="impact" class="impact-wrap">
+  <div class="section container">
+    <div class="impact-header">
+      <span class="slabel">// SCALE OF IMPACT</span>
+      <h2 class="stitle">The numbers behind the problem.</h2>
+    </div>
+    <div class="impact-grid">
+      <div class="icard"><div class="inum">1.5Cr</div><div class="idesc">Engineering students in Indian colleges — a significant fraction lack access to functioning laboratories.</div></div>
+      <div class="icard"><div class="inum">6–12mo</div><div class="idesc">Average on-the-job retraining time employers report — a direct cost of the practical education deficit.</div></div>
+      <div class="icard"><div class="inum">₹0</div><div class="idesc">Cost to any student to use VirtuLab. No lab fees, no equipment, no installation. Just a browser.</div></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="flogo">VirtuLab</div>
+  <div class="ftagline">"We built this in 3.5 hours. Imagine what we can do with 3 months."</div>
+  <div class="fbottom">Built at Hackathon 2024 · Team VirtuLab · Powered by NEP 2020</div>
+</footer>
+
+<div class="overlay" id="overlay" onclick="closeModal(event)">
+  <div class="modal" id="modal">
+    <div class="mhead">
+      <div class="mtitle" id="mtitle">Lab</div>
+      <button class="mclose" onclick="closeLab()">✕</button>
+    </div>
+    <div class="mbody" id="mbody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
 <script src="script.js"></script>
 </body>
 </html>
