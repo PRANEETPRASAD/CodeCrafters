@@ -1,13 +1,4 @@
-<style>
-  body {
-    font-family: Arial;
-    text-align: center;
-    margin-top: 50px;
-  }
-  input, button {
-    padding: 10px;
-    margin: 5px;
-  }
+
 </style>/* ── RESET & VARIABLES ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
